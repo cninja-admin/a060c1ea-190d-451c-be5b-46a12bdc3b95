@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MusicBeats-music player</title>
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="style-homepage.css" />
+    <link rel="stylesheet" type="text/css" href="media-homepage.css" />
+    <script
+      src="https://kit.fontawesome.com/2d9b67a497.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav class="navigation">
+      <div class="title-logo-text">
+        <div class="web-logo">
+          <img
+            src=" https://cdn.dribbble.com/users/4805138/screenshots/10542049/media/d0ef135b59e01d756dc984a8a9faf605.jpeg?compress=1&resize=800x600"
+          />
+        </div>
+
+        <div class="website-name">
+          <h2>MusicBeats</h2>
+          <h4>Unlimited music</h4>
+        </div>
+      </div>
+
+      <div>
+        <h4>Favourites</h4>
+      </div>
+
+      <div class="search-bar">
+        <div>
+          <!-- search icon -->
+          <i class="fas fa-search search-ico"></i>
+        </div>
+        <input type="text" name="search" placeholder="Search" />
+      </div>
+      <div class="bell">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxOER48YekOMD67obQGtMwFkoVghuarj032LbDrjnwwlzhC5PoTVqM7QAQx3mjfBbu3Xk&usqp=CAU"
+        />
+      </div>
+
+      <div class="profile-pic">
+        <!--profile-image-->
+        <img
+          src="https://secure.gravatar.com/avatar/8bb211a1d66efabb5fe4b267f7f6fcd8/?s=48&d=https://images.binaryfortress.com/General/UnknownUser1024.png"
+        />
+      </div>
+    </nav>
+
+    <main>
+      <!-- aside section-on-left -->
+      <aside class="left-section-1">
+        <!-- this is for the carousel -->
+        <div class="outer-carousel">
+          <div class="carousel">
+            <img
+              src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/61449105d9554b0411fd8970/COLLECTION_38046315337813.png"
+            />
+            <img
+              src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/60b47ddad580824fac2d63d0/COLLECTION_323402318943904.png"
+            />
+            <img
+              src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/613ecc61b6206e5896de063f/COLLECTION_522541741416052.png"
+            />
+          </div>
+        </div>
+
+        <div class="latest-release">
+          <h1 style="margin-bottom: 10px;">
+            Latest Release
+          </h1>
+
+          <div class="latest-release-section">
+            <!--cards-->
+            <div class="song-card">
+              <div>
+                <!-- image song card -->
+                <img
+                  src="https://c.saavncdn.com/286/WMG_190295851286-English-2017-500x500.jpg"
+                />
+                <!-- play button on the card image -->
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <!-- the name and date of release of the song -->
+              <div class="song-details">
+                <h3>
+                  Perfect
+                </h3>
+                <p>
+                  Aug 11,2017
+                </p>
+              </div>
+              <!--  option menu  will be shown to the user  -->
+              <div class="options">
+                <label for="latest-release-checkbox"
+                  ><svg
+                    class="svg-inline--fa fa-ellipsis-h fa-w-16"
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="ellipsis-h"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    data-fa-i2svg=""
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"
+                    ></path></svg
+                  ><!-- <i class="fas fa-ellipsis-h"></i> Font Awesome fontawesome.com --></label
+                >
+                <input type="checkbox" id="latest-release-checkbox" />
+                <div class="latest-release-dropdown">
+                  <div class="drop-item">
+                    <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                    <p>
+                      <svg
+                        class="svg-inline--fa fa-play-circle fa-w-16"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="play-circle"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        data-fa-i2svg=""
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"
+                        ></path></svg
+                      ><!-- <i class="fas fa-play-circle"></i> Font Awesome fontawesome.com -->
+                      <a href="Single Playlist Screen.html">Play Now</a>
+                    </p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p>
+                      <svg
+                        class="svg-inline--fa fa-list-ul fa-w-16"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="list-ul"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        data-fa-i2svg=""
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M48 48a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm0 160a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm0 160a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm448 16H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z"
+                        ></path></svg
+                      ><!-- <i class="fas fa-list-ul"></i> Font Awesome fontawesome.com -->
+                      Add to Queue
+                    </p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p>
+                      <svg
+                        class="svg-inline--fa fa-music fa-w-16"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="music"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        data-fa-i2svg=""
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M470.38 1.51L150.41 96A32 32 0 0 0 128 126.51v261.41A139 139 0 0 0 96 384c-53 0-96 28.66-96 64s43 64 96 64 96-28.66 96-64V214.32l256-75v184.61a138.4 138.4 0 0 0-32-3.93c-53 0-96 28.66-96 64s43 64 96 64 96-28.65 96-64V32a32 32 0 0 0-41.62-30.49z"
+                        ></path></svg
+                      ><!-- <i class="fas fa-music"></i> Font Awesome fontawesome.com -->
+                      Add to playlist
+                    </p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p>
+                      <svg
+                        class="svg-inline--fa fa-info-circle fa-w-16"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="info-circle"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        data-fa-i2svg=""
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"
+                        ></path></svg
+                      ><!-- <i class="fas fa-info-circle"></i> Font Awesome fontawesome.com -->
+                      Get Info
+                    </p>
+                  </div>
+                </div>
+                <!-- duration of the song -->
+
+                <p>
+                  4:44
+                </p>
+              </div>
+            </div>
+            <!-- second card -->
+            <div class="song-card">
+              <div>
+                <!-- image corresponding to the card -->
+                <img
+                  src="https://c.saavncdn.com/981/Faded-English-2015-500x500.jpg"
+                />
+                <!-- play button, which will be shown on hover on the card image -->
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <!-- it will contain the name and date of release of the song -->
+              <div class="song-details">
+                <h3>
+                  Faded
+                </h3>
+                <p>
+                  Jun 11,2018
+                </p>
+              </div>
+              <!-- if someone clicks on the three dots, options will be shown to the user for further action -->
+              <div class="options">
+                <label for="latest-release-checkbox2"
+                  ><svg
+                    class="svg-inline--fa fa-ellipsis-h fa-w-16"
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="ellipsis-h"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    data-fa-i2svg=""
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"
+                    ></path></svg
+                  ><!-- <i class="fas fa-ellipsis-h"></i> Font Awesome fontawesome.com --></label
+                >
+                <input type="checkbox" id="latest-release-checkbox2" />
+                <div class="latest-release-dropdown">
+                  <div class="drop-item">
+                    <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                    <p>
+                      <svg
+                        class="svg-inline--fa fa-play-circle fa-w-16"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="play-circle"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        data-fa-i2svg=""
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"
+                        ></path></svg
+                      ><!-- <i class="fas fa-play-circle"></i> Font Awesome fontawesome.com -->
+                      <a href="Single Playlist Screen.html">Play Now</a>
+                    </p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p>
+                      <svg
+                        class="svg-inline--fa fa-list-ul fa-w-16"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="list-ul"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        data-fa-i2svg=""
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M48 48a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm0 160a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm0 160a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm448 16H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z"
+                        ></path></svg
+                      ><!-- <i class="fas fa-list-ul"></i> Font Awesome fontawesome.com -->
+                      Add to Queue
+                    </p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p>
+                      <svg
+                        class="svg-inline--fa fa-music fa-w-16"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="music"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        data-fa-i2svg=""
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M470.38 1.51L150.41 96A32 32 0 0 0 128 126.51v261.41A139 139 0 0 0 96 384c-53 0-96 28.66-96 64s43 64 96 64 96-28.66 96-64V214.32l256-75v184.61a138.4 138.4 0 0 0-32-3.93c-53 0-96 28.66-96 64s43 64 96 64 96-28.65 96-64V32a32 32 0 0 0-41.62-30.49z"
+                        ></path></svg
+                      ><!-- <i class="fas fa-music"></i> Font Awesome fontawesome.com -->
+                      Add to playlist
+                    </p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p>
+                      <svg
+                        class="svg-inline--fa fa-info-circle fa-w-16"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="info-circle"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        data-fa-i2svg=""
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"
+                        ></path></svg
+                      ><!-- <i class="fas fa-info-circle"></i> Font Awesome fontawesome.com -->
+                      Get Info
+                    </p>
+                  </div>
+                </div>
+
+                <!-- duration of the song -->
+                <p>
+                  5:04
+                </p>
+              </div>
+            </div>
+
+            <!--third-card-->
+            <div class="song-card">
+              <div>
+                <!-- image corresponding to the card -->
+                <img
+                  src="https://c.saavncdn.com/983/Justice-English-2021-20210325102906-500x500.jpg"
+                />
+                <!-- play button, which will be shown on hover on the card image -->
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <!-- it will contain the name and date of release of the song -->
+              <div class="song-details">
+                <h3>
+                  Peaches
+                </h3>
+                <p>
+                  Aug 21,2019
+                </p>
+              </div>
+              <!-- if someone clicks on the three dots, options will be shown to the user for further action -->
+              <div class="options">
+                <label for="latest-release-checkbox"
+                  ><svg
+                    class="svg-inline--fa fa-ellipsis-h fa-w-16"
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="ellipsis-h"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    data-fa-i2svg=""
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"
+                    ></path></svg
+                  ><!-- <i class="fas fa-ellipsis-h"></i> Font Awesome fontawesome.com --></label
+                >
+                <input type="checkbox" id="latest-release-checkbox3" />
+                <div class="latest-release-dropdown">
+                  <div class="drop-item">
+                    <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                    <p>
+                      <svg
+                        class="svg-inline--fa fa-play-circle fa-w-16"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="play-circle"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        data-fa-i2svg=""
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"
+                        ></path></svg
+                      ><!-- <i class="fas fa-play-circle"></i> Font Awesome fontawesome.com -->
+                      <a href="Single Playlist Screen.html">Play Now</a>
+                    </p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p>
+                      <svg
+                        class="svg-inline--fa fa-list-ul fa-w-16"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="list-ul"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        data-fa-i2svg=""
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M48 48a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm0 160a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm0 160a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm448 16H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z"
+                        ></path></svg
+                      ><!-- <i class="fas fa-list-ul"></i> Font Awesome fontawesome.com -->
+                      Add to Queue
+                    </p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p>
+                      <svg
+                        class="svg-inline--fa fa-music fa-w-16"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="music"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        data-fa-i2svg=""
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M470.38 1.51L150.41 96A32 32 0 0 0 128 126.51v261.41A139 139 0 0 0 96 384c-53 0-96 28.66-96 64s43 64 96 64 96-28.66 96-64V214.32l256-75v184.61a138.4 138.4 0 0 0-32-3.93c-53 0-96 28.66-96 64s43 64 96 64 96-28.65 96-64V32a32 32 0 0 0-41.62-30.49z"
+                        ></path></svg
+                      ><!-- <i class="fas fa-music"></i> Font Awesome fontawesome.com -->
+                      Add to playlist
+                    </p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p>
+                      <svg
+                        class="svg-inline--fa fa-info-circle fa-w-16"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="info-circle"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        data-fa-i2svg=""
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"
+                        ></path>
+                      </svg>
+                      Get Info
+                    </p>
+                  </div>
+                </div>
+                <!-- duration of the song -->
+                <p>
+                  4:49
+                </p>
+              </div>
+            </div>
+
+            <!--fourth-card-->
+            <div class="song-card">
+              <div>
+                <!-- image song card -->
+                <img
+                  src="https://c.saavncdn.com/109/Animals-English-2014-500x500.jpg"
+                />
+                <!-- play button -->
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <!--  name and date of release of the song -->
+              <div class="song-details">
+                <h3>
+                  Animals
+                </h3>
+                <p>
+                  Aug 01,2019
+                </p>
+              </div>
+              <!-- options will be shown to the user -->
+              <div class="options">
+                <label for="latest-release-checkbox4"
+                  ><svg
+                    class="svg-inline--fa fa-ellipsis-h fa-w-16"
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="ellipsis-h"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    data-fa-i2svg=""
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"
+                    ></path></svg
+                  ><!-- <i class="fas fa-ellipsis-h"></i> Font Awesome fontawesome.com --></label
+                >
+                <input type="checkbox" id="latest-release-checkbox4" />
+                <div class="latest-release-dropdown">
+                  <div class="drop-item">
+                    <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                    <p>
+                      <svg
+                        class="svg-inline--fa fa-play-circle fa-w-16"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="play-circle"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        data-fa-i2svg=""
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"
+                        ></path></svg
+                      ><!-- <i class="fas fa-play-circle"></i> Font Awesome fontawesome.com -->
+                      <a href="Single Playlist Screen.html">Play Now</a>
+                    </p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p>
+                      <svg
+                        class="svg-inline--fa fa-list-ul fa-w-16"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="list-ul"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        data-fa-i2svg=""
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M48 48a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm0 160a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm0 160a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm448 16H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z"
+                        ></path>
+                      </svg>
+                      Add to Queue
+                    </p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p>
+                      <svg
+                        class="svg-inline--fa fa-music fa-w-16"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="music"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        data-fa-i2svg=""
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M470.38 1.51L150.41 96A32 32 0 0 0 128 126.51v261.41A139 139 0 0 0 96 384c-53 0-96 28.66-96 64s43 64 96 64 96-28.66 96-64V214.32l256-75v184.61a138.4 138.4 0 0 0-32-3.93c-53 0-96 28.66-96 64s43 64 96 64 96-28.65 96-64V32a32 32 0 0 0-41.62-30.49z"
+                        ></path>
+                      </svg>
+                      Add to playlist
+                    </p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p>
+                      <svg
+                        class="svg-inline--fa fa-info-circle fa-w-16"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="info-circle"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        data-fa-i2svg=""
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"
+                        ></path>
+                      </svg>
+                      Get Info
+                    </p>
+                  </div>
+                </div>
+                <!-- duration of the song -->
+                <p>
+                  4:44
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--popular-artists-->
+
+        <div class="popular-artists">
+          <!-- heading of popular artists section -->
+          <h1 style="margin-bottom: 12px;">
+            Popular Artists
+          </h1>
+          <div class="popular-artist-content">
+            <!-- if user clicks on any one artist, it will redirect the user to the playlist page -->
+            <!--  list of artists -->
+            <!-- first artist -->
+            <a href="playlist-page.html">
+              <div>
+                <img
+                  src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/artists/profile/5a8e7ad42951624319d6bb8b.png"
+                />
+                <p>
+                  Maroon 5
+                </p>
+              </div>
+            </a>
+            <!-- second artist -->
+            <a href="playlist-page.html">
+              <div>
+                <img
+                  src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/artists/profile/5f69cef07c0c587ea57d83f8.png"
+                />
+                <p>
+                  Daddy Yankee
+                </p>
+              </div>
+            </a>
+            <!-- third artist -->
+            <a href="playlist-page.html">
+              <div>
+                <img
+                  src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/artists/profile/5a8e9c4d2951624319d6bf8f.png "
+                  width="15vw"
+                  height="10vw"
+                />
+                <p>
+                  Enrique
+                </p>
+              </div>
+            </a>
+            <!-- fourth artist -->
+            <a href="playlist-page.html">
+              <div>
+                <img
+                  src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/artists/profile/5acb47312951624f1482c7df.png"
+                />
+                <p>
+                  Katy Perry
+                </p>
+              </div>
+            </a>
+            <!-- fifth artist -->
+            <a href="playlist-page.html">
+              <div>
+                <img
+                  src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/artists/profile/5a8e97442951624319d6bf28.png"
+                />
+                <p>
+                  Drake
+                </p>
+              </div>
+            </a>
+            <!-- sixth artist -->
+            <a href="playlist-page.html">
+              <div>
+                <img
+                  src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/artists/profile/5a8e988a2951624319d6bf39.png"
+                />
+                <p>
+                  Ed Sheeran
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!--themes-1-stations-->
+        <div class="music-themes">
+          <!-- this div will be the logo of music themes -->
+
+          <div class="stations">
+            <div id="div2">
+              <div id="div3">
+                <img
+                  src="https://cdn.dribbble.com/users/4805138/screenshots/10542049/media/d0ef135b59e01d756dc984a8a9faf605.jpeg?compress=1&resize=800x600"
+                />
+                <p>Stations</p>
+              </div>
+            </div>
+          </div>
+          <!-- this is the content of themes 1 -->
+
+          <div class="theme-main">
+            <div class="theme-content">
+              <img
+                src="https://www.music-bazaar.com/album-images/vol32/1882/1882197/3760844-big/Chilly-Days-Mood-Music-To-Chill-Out-Rest-And-Calm-Down-cover.jpg"
+              />
+              <p>Chill</p>
+            </div>
+            <div class="theme-content">
+              <img
+                src="https://i.scdn.co/image/ab67616d0000b27396346a0b44bef2fbd969f1c6"
+              />
+              <p>Rock</p>
+            </div>
+            <div class="theme-content">
+              <img
+                src="https://media-manager.starsinsider.com/gallery/400/na_599d97d4be393.jpg"
+              />
+              <p>Love</p>
+            </div>
+            <div class="theme-content">
+              <img
+                src="https://image.shutterstock.com/image-vector/pop-music-vintage-3d-vector-600w-1427685572.jpg"
+              />
+              <p>Pop</p>
+            </div>
+            <div class="theme-content">
+              <img
+                src="https://png.pngtree.com/background/20210711/original/pngtree-retro-music-poster-background-material-picture-image_1103196.jpg"
+              />
+              <p>Retro</p>
+            </div>
+            <div class="theme-content">
+              <img
+                src="https://i.scdn.co/image/ab67706c0000bebba5d57a8a69576832d2832fc1"
+              />
+              <p>Workout</p>
+            </div>
+          </div>
+        </div>
+        <!--themes-2-->
+        <div class="music-themes-2">
+          <!-- 3 divs content -->
+          <div class="outer-div">
+            <div class="inner-div">
+              <span>party</span>
+            </div>
+          </div>
+          <div class="outer-div">
+            <div class="inner-div">
+              <span>Electronic</span>
+            </div>
+          </div>
+          <div class="outer-div">
+            <div class="inner-div">
+              <span>Rock</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="language english">
+          <!-- latest english section -->
+          <h1 class="language-heading">
+            Latest English
+          </h1>
+          <!-- contents of latest english -->
+          <div class="language-content">
+            <div>
+              <img
+                src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_universalmusic/music/1480054133/srch_universalmusic_00602557212372-USUG11600977.jpg"
+              />
+              <p>Starboy</p>
+              <p>Aug 11, 2017</p>
+            </div>
+            <div>
+              <img
+                src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_sonymusic/music/srch_sonymusic_A10328E0009621401B.jpg"
+              />
+              <p>Vida Loca</p>
+              <p>Aug 11, 2017</p>
+            </div>
+            <div>
+              <img
+                src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_sonymusic/music/srch_sonymusic_A10328E0007715972X.jpg"
+              />
+              <p>Cheap Thrills</p>
+              <p>Aug 11, 2017</p>
+            </div>
+            <div>
+              <img
+                src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_universalmusic/music/1538078619/srch_universalmusic_00602577004759-USUG11802029.jpg"
+              />
+              <p>Taki Taki</p>
+              <p>Aug 11, 2017</p>
+            </div>
+            <div>
+              <img
+                src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_universalmusic/music/1585888988/srch_universalmusic_00602508991486-USUG12001282.jpg"
+              />
+              <p>Toosie Slide</p>
+              <p>Aug 11, 2017</p>
+            </div>
+            <div>
+              <img
+                src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_sonymusic/music/srch_sonymusic_A10328E0007917812A.jpg"
+              />
+              <p>Closer</p>
+              <p>Aug 11, 2017</p>
+            </div>
+          </div>
+        </div>
+        <!-- hindi section -->
+        <div class="language hindi">
+          <!-- hindi section heading -->
+          <h1 class="language-heading">
+            Latest Hindi
+          </h1>
+          <!-- hindi section contents -->
+          <div class="language-content">
+            <div>
+              <img
+                src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/CHOGADA.jpg"
+              />
+              <p>Chogada</p>
+              <p>Aug 11, 2017</p>
+            </div>
+            <div>
+              <img
+                src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_hungama/music/8903431622464/1615222813/srch_hungama_21438966.jpg"
+              />
+              <p>Fashion</p>
+              <p>Aug 11, 2017</p>
+            </div>
+            <div>
+              <img
+                src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_hungama/music/8902894360418/1618071622/srch_hungama_39083210.jpg"
+              />
+              <p>Dekhte Dekhte</p>
+              <p>Aug 11, 2017</p>
+            </div>
+            <div>
+              <img
+                src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/1473956495/srch_sonymusic_INS171602235.jpg"
+              />
+              <p>Bulleya</p>
+              <p>Aug 11, 2017</p>
+            </div>
+            <div>
+              <img
+                src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/WAR-Hindi.jpg"
+              />
+              <p>Ghungroo</p>
+              <p>Aug 11, 2017</p>
+            </div>
+            <div>
+              <img
+                src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_sonymusic/music/srch_sonymusic_A10328E0009298868Y.jpg"
+              />
+              <p>Shayad</p>
+              <p>Aug 11, 2017</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!--right-section-aside-->
+      <aside class="right-aside-section-2">
+        <!-- this is the section heading part. the heading will be static -->
+        <div class="heading">
+          <h1>Playlist</h1>
+          <h4>
+            <a href="#queue-option-box"
+              >Queue <i class="fas fa-chevron-circle-down"></i
+            ></a>
+          </h4>
+        </div>
+        <!-- this is the queue box which will be shown when the user clicks on the Queue button -->
+
+        <div class="queue-options" id="queue-option-box">
+          <p>
+            <a href style="color: #c3c9ce; font-weight: bolder;">Playlists</a>
+          </p>
+          <hr />
+          <p>
+            <a href style="color: #bfccda; font-weight: bolder;"
+              >Song History</a
+            >
+          </p>
+          <hr />
+          <p>
+            <a href="#" style="color: rgb(228, 95, 95); font-weight: bolder;"
+              >CLOSE</a
+            >
+          </p>
+        </div>
+        <!-- this is the content of the playlist. it will be dynamic. -->
+        <div class="playlist-content">
+          <!-- first playlist item -->
+          <div class="playlist-item">
+            <div class="left-content">
+              <!-- index -->
+              <div style="margin-right: 4px;">
+                01
+              </div>
+              <div class="effect">
+                <!--effect-->
+                <!-- effect class is for those items which when hovered will show an effect -->
+
+                <img
+                  src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_sonymusic/music/A10301A0004622804Y_20210706191109211/1625592609/srch_sonymusic_A10328E00100230915.jpg"
+                />
+                <div class="play-button">
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <!-- name and author of the song -->
+              <div>
+                <div>
+                  Stay
+                </div>
+                <p>
+                  Justin Bieber
+                </p>
+              </div>
+            </div>
+            <!-- like-star- button -->
+            <div class="right-content">
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <!-- second playlist item -->
+          <div class="playlist-item">
+            <div class="left-content">
+              <div style="margin-right: 4px;">
+                02
+              </div>
+              <div class="effect">
+                <img
+                  src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_orchard/music/update/20210804235015_196292152586/1628136613/srch_orchard_196292152586_AEA2D2100063.jpg"
+                />
+                <div class="play-button">
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div>
+                <div>
+                  Runaway
+                </div>
+                <p>
+                  Rehab
+                </p>
+              </div>
+            </div>
+            <div class="right-content">
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <!-- third playlist item -->
+          <div class="playlist-item">
+            <div class="left-content">
+              <div style="margin-right: 4px;">
+                03
+              </div>
+              <div class="effect">
+                <img
+                  src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_universalmusic/music/1607685047/srch_universalmusic_00602435648675-USUG12004699.jpg"
+                />
+                <div class="play-button">
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div>
+                <div>
+                  Willow
+                </div>
+                <p>
+                  Taylor Swift
+                </p>
+              </div>
+            </div>
+            <div class="right-content">
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <!-- fourth playlist item -->
+          <div class="playlist-item">
+            <div class="left-content">
+              <div style="margin-right: 4px;">
+                04
+              </div>
+              <div class="effect">
+                <img
+                  src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_sonymusic/music/A10301A0004622804Y_20210706191109211/1625592609/srch_sonymusic_A10328E00100230915.jpg"
+                />
+                <div class="play-button">
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div>
+                <div>
+                  Stay
+                </div>
+                <p>
+                  Justin Bieber
+                </p>
+              </div>
+            </div>
+            <div class="right-content">
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <!-- fifth playlist item -->
+          <div class="playlist-item">
+            <div class="left-content">
+              <div style="margin-right: 4px;">
+                05
+              </div>
+              <div class="effect">
+                <img
+                  src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_orchard/music/update/20210804235015_196292152586/1628136613/srch_orchard_196292152586_AEA2D2100063.jpg"
+                />
+                <div class="play-button">
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div>
+                <div>
+                  Runaway
+                </div>
+                <p>
+                  Rehab
+                </p>
+              </div>
+            </div>
+            <div class="right-content">
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <!-- sixth playlist item -->
+          <div class="playlist-item">
+            <div class="left-content">
+              <div style="margin-right: 4px;">
+                06
+              </div>
+              <div class="effect">
+                <img
+                  src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_universalmusic/music/1607685047/srch_universalmusic_00602435648675-USUG12004699.jpg"
+                />
+                <div class="play-button">
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div>
+                <div>
+                  Willow
+                </div>
+                <p>
+                  Taylor Swift
+                </p>
+              </div>
+            </div>
+            <div class="right-content">
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <!-- seventh playlist item -->
+          <div class="playlist-item">
+            <div class="left-content">
+              <div style="margin-right: 4px;">
+                07
+              </div>
+              <div class="effect">
+                <img
+                  src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_sonymusic/music/A10301A0004622804Y_20210706191109211/1625592609/srch_sonymusic_A10328E00100230915.jpg"
+                />
+                <div class="play-button">
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div>
+                <div>
+                  Stay
+                </div>
+                <p>
+                  Justin Bieber
+                </p>
+              </div>
+            </div>
+            <div class="right-content">
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <!-- eighth playlist item -->
+          <div class="playlist-item">
+            <div class="left-content">
+              <div style="margin-right: 4px;">
+                08
+              </div>
+              <div class="effect">
+                <img
+                  src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_orchard/music/update/20210804235015_196292152586/1628136613/srch_orchard_196292152586_AEA2D2100063.jpg"
+                />
+                <div class="play-button">
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div>
+                <div>
+                  Runaway
+                </div>
+                <p>
+                  Rehab
+                </p>
+              </div>
+            </div>
+            <div class="right-content">
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <!-- ninth playlist item -->
+          <div class="playlist-item">
+            <div class="left-content">
+              <div style="margin-right: 4px;">
+                09
+              </div>
+              <div class="effect">
+                <img
+                  src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_universalmusic/music/1607685047/srch_universalmusic_00602435648675-USUG12004699.jpg"
+                />
+                <div class="play-button">
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div>
+                <div>
+                  Willow
+                </div>
+                <p>
+                  Taylor Swift
+                </p>
+              </div>
+            </div>
+            <div class="right-content">
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <!-- tenth playlist item -->
+          <div class="playlist-item">
+            <div class="left-content">
+              <div style="margin-right: 4px;">
+                10
+              </div>
+              <div class="effect">
+                <img
+                  src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_sonymusic/music/A10301A0004622804Y_20210706191109211/1625592609/srch_sonymusic_A10328E00100230915.jpg"
+                />
+                <div class="play-button">
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div>
+                <div>
+                  Stay
+                </div>
+                <p>
+                  Justin Bieber
+                </p>
+              </div>
+            </div>
+            <div class="right-content">
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </body>
+
+  <script src="script.js"></script>
+</html>
